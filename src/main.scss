@@ -1,0 +1,16 @@
+// Import initial variables
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+
+/* Customize */
+
+//$family-primary: 'Times New Roman';
+$modal-card-title-size: $size-6;
+$desktop: 980px;
+$modal-content-width: 960px;
+
+// Import the rest of Bulma
+@import '~bulma/bulma';
+
+// Import Buefy
+@import "~buefy/src/scss/buefy";
