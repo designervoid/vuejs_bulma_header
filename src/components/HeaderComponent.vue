@@ -4,11 +4,11 @@
             <a class="navbar-item">
                 Logo Image
             </a>
-            <a class="navbar-item"><b-icon pack="fas" icon="check"></b-icon></a>
         </div>
 
         <div class="navbar-menu">
             <div class="navbar-end">
+                <b-icon pack="fas" icon="globe"></b-icon>
                 <b-dropdown
                     v-model="navigation"
                     position="is-bottom-left"
@@ -17,39 +17,27 @@
                         class="navbar-item"
                         slot="trigger"
                         role="button">
-                        <span>Menu</span>
-                        <b-icon icon="menu-down"></b-icon>
+                        <span>Name</span>
+                        <span>Avatar</span>
                     </a>
 
                     <b-dropdown-item custom aria-role="menuitem">
-                        Logged as <b>Rafael Beraldo</b>
+                        Avatar, Name, Type_of_user
                     </b-dropdown-item>
                     <hr class="dropdown-divider">
-                    <b-dropdown-item has-link aria-role="menuitem">
-                        <a href="https://google.com" target="_blank">
-                            <b-icon icon="link"></b-icon>
-                            Google (link)
-                        </a>
+                    <b-dropdown-item value="settings" aria-role="menuitem">
+                        <b-icon icon="cog"></b-icon>
+                        <div class="">
+                          Settings
+                        </div>
                     </b-dropdown-item>
-                    <b-dropdown-item value="home" aria-role="menuitem">
-                        <b-icon icon="home"></b-icon>
-                        Home
-                    </b-dropdown-item>
-                    <b-dropdown-item value="products" aria-role="menuitem">
-                        <b-icon icon="cart"></b-icon>
-                        Products
-                    </b-dropdown-item>
-                    <b-dropdown-item value="blog" disabled aria-role="menuitem">
-                        <b-icon icon="book-open"></b-icon>
-                        Blog
+                    <b-dropdown-item value="package" aria-role="menuitem">
+                        <b-icon icon="cubes"></b-icon>
+                        Package
                     </b-dropdown-item>
                     <hr class="dropdown-divider" aria-role="menuitem">
-                    <b-dropdown-item value="settings">
-                        <b-icon icon="settings"></b-icon>
-                        Settings
-                    </b-dropdown-item>
                     <b-dropdown-item value="logout" aria-role="menuitem">
-                        <b-icon icon="logout"></b-icon>
+                        <b-icon icon="sign-out-alt"></b-icon>
                         Logout
                     </b-dropdown-item>
                 </b-dropdown>
@@ -68,3 +56,6 @@
         }
     }
 </script>
+
+<style scoped>
+</style>

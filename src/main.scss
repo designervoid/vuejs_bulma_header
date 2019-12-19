@@ -14,3 +14,18 @@ $modal-content-width: 960px;
 
 // Import Buefy
 @import "~buefy/src/scss/buefy";
+
+
+// navbar scss
+.navbar-end {
+  align-self:center;
+  height:100%;
+}
+span.icon {
+  height:100%;
+}
+a.dropdown-item {
+  display: flex;
+    align-self: center;
+    align-items: center;
+}
