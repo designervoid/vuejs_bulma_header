@@ -1,0 +1,93 @@
+// Import initial variables
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+
+/* Customize */
+
+//$family-primary: 'Times New Roman';
+$modal-card-title-size: $size-6;
+$desktop: 980px;
+$modal-content-width: 960px;
+
+// Import the rest of Bulma
+@import '~bulma/bulma';
+
+// Import Buefy
+@import "~buefy/src/scss/buefy";
+
+// navbar scss
+.navbar {
+  *:focus {
+    outline: none;
+  }
+  height: 74px;
+  .navbar-end {
+    align-self:center;
+    height:100%;
+  }
+  span.icon {
+    height:100%;
+  }
+  .globe-button {
+    padding: 1rem;
+    margin-right:40px;
+    width: 74px;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+  }
+  .globe-button:active {
+    background-color: grey;
+  }
+  a.dropdown-item {
+    display: flex;
+      align-self: center;
+      align-items: center;
+  }
+  .navbar-item .logo {
+    width: 100px;
+    background-color: black;
+  }
+  .navbar-item .avatar, .avatar {
+    width: 38px;
+    max-height: 38px;
+    border-radius: 100%;
+  }
+  .navbar-username {
+    padding: 0 0.55rem 0 0;
+  }
+  div.dropdown.is-bottom-left.is-active.is-mobile-modal,
+  div.dropdown.is-bottom-left.is-mobile-modal {
+    width: 151px;
+    display: flex;
+    justify-content: center;
+  }
+  div.dropdown-trigger,
+  a.navbar-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .dropdown.is-bottom-left .dropdown-menu {
+    top: 70px;
+    right: 10px;
+    left: auto;
+    width: 240px;
+  }
+  .column-avatar {
+    display: flex;
+    justify-content: center;
+  }
+  .column-user-info {
+    padding: 0;
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
+  }
+}
+
+
+body {
+  height: 1200px;
+  background-color: black;
+}

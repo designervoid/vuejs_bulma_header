@@ -2,13 +2,14 @@
     <nav class="navbar">
         <div class="navbar-brand">
             <a class="navbar-item">
-                Logo Image
+                <img :src="logo_image" alt="" class="logo">
             </a>
         </div>
-
         <div class="navbar-menu">
             <div class="navbar-end">
-                <b-icon pack="fas" icon="globe"></b-icon>
+                <div class="globe-button">
+                  <b-icon pack="fas" icon="globe"></b-icon>
+                </div>
                 <b-dropdown
                     v-model="navigation"
                     position="is-bottom-left"
@@ -17,12 +18,22 @@
                         class="navbar-item"
                         slot="trigger"
                         role="button">
-                        <span>Name</span>
-                        <span>Avatar</span>
+                        <span class="navbar-username">{{ name }}</span>
+                        <div>
+                          <img :src="avatar" alt="" class="avatar">
+                        </div>
                     </a>
 
                     <b-dropdown-item custom aria-role="menuitem">
-                        Avatar, Name, Type_of_user
+                      <div class="columns">
+                        <div class="column column-avatar">
+                          <img :src="avatar" alt="" class="avatar">
+                        </div>
+                        <div class="column column-user-info">
+                          {{ name }} <br>
+                          {{ type_of_user }}
+                        </div>
+                      </div>
                     </b-dropdown-item>
                     <hr class="dropdown-divider">
                     <b-dropdown-item value="settings" aria-role="menuitem">
@@ -51,11 +62,16 @@
         name: 'HeaderComponent',
         data() {
             return {
-                navigation: 'home'
+                navigation: 'home',
+                logo_image: 'https://login.leonardo.fund/network-manager/leonardo/logo_full.png',
+                name: 'Ilnur',
+                avatar: 'https://avatar.leonardo.fund/d1e44c1854aaa74f07fb1b520c44a959.png',
+                type_of_user: 'Manager'
             }
         }
     }
 </script>
 
 <style scoped>
+
 </style>
